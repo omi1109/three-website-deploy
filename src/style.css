@@ -34,3 +34,60 @@ section {
   padding: 20px;
   font-size: 3.5rem;
 }
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+  }
+  
+  body {
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  main {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    z-index: 100;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 70px;
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 3.5rem;
+  }
+  h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .chars_splitted {
+    position: relative;
+  }
+  
+  
+  
+}

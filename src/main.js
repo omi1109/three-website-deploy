@@ -1,12 +1,13 @@
 import './style.css'
 import * as THREE from "three"
+import bg from "../public/bg.jpg"
 //canvas
 const canvas = document.querySelector("#webgl");
 
 const scene = new THREE.Scene();
 
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("../bg/bg.jpg");
+const bgTexture = textureLoader.load(bg);
 scene.background = bgTexture;
 
 const sizes = {
